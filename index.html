@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trashbox • სამშენებლო ბუნკერები</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo-area">
+                <img src="Files/IMGLOGO.jpeg" alt="Trashbox Logo" class="main-logo">
+            </div>
+            <div id="name-box" class="name-area">
+                <h2 id="header-subtitle">სამშენებლო და სარემონტო ნარჩენების გატანა</h2>
+            </div>
+            <div class="lang-switcher">
+                <button onclick="changeLang('ka')">🇬🇪</button>
+                <button onclick="changeLang('en')">🇺🇸</button>
+                <button onclick="changeLang('ru')">🇷🇺</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="slideshow-section">
+        <div class="slideshow-container">
+            <div class="slide fade"><img src="Files/IMG1.jpeg" alt="Trashbox 1"></div>
+            <div class="slide fade"><img src="Files/IMG2.jpeg" alt="Trashbox 2"></div>
+            <div class="slide fade"><img src="Files/IMG3.jpeg" alt="Trashbox 3"></div>
+            <div class="slide fade"><img src="Files/IMG4.jpeg" alt="Trashbox 4"></div>
+            <div class="slide fade"><img src="Files/IMG5.jpeg" alt="Trashbox 5"></div>
+        </div>
+    </section>
+
+    <main class="content">
+        <h1 id="title">Trashbox • სამშენებლო ბუნკერები</h1>
+        
+        <div id="desc-box" class="description">
+            <p>Trashbox გთავაზობთ სამშენებლო ნარჩენების გატანას:</p>
+            <ul>
+                <li>9 კუბიანი კონტეინერები</li>
+                <li>სწრაფი მიწოდება</li>
+                <li>გატანა შეთანხმებულ ვადებში</li>
+                <li>ხელსაყრელი ფასები</li>
+            </ul>
+        </div>
+
+        <div class="phone-display">+995 511 226 226</div>
+
+        <div class="button-group">
+            <a href="tel:+995511226226" class="btn call">
+                <i class="fas fa-phone"></i> <span id="btn-call">დარეკვა</span>
+            </a>
+            <a href="https://wa.me/995511226226" class="btn whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="https://www.facebook.com/share/1CVz2U8kb2/?mibextid=wwXIfr" target="_blank" class="btn facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+</html>

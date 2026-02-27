@@ -1,0 +1,107 @@
+:root {
+    --brand-green: #2ecc71; 
+    --dark-bg: #0f0f0f;     /* Pure Dark Background */
+    --card-bg: #1a1a1a;     /* Slightly lighter dark for the box */
+}
+
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: var(--dark-bg);
+    color: white;
+    text-align: center;
+}
+
+header {
+    background: #000;
+    padding: 12px 20px;
+    border-bottom: 3px solid var(--brand-green);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    gap: 15px;
+}
+
+.main-logo { height: 60px; border-radius: 5px; }
+
+/* The Green Box you added */
+.name-area {
+    background-color: var(--brand-green);
+    padding: 10px 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+.name-area h2 {
+    font-size: 1rem;
+    margin: 0;
+    color: #000; /* Black text on green background */
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.lang-switcher button {
+    background: none; border: none; font-size: 1.5rem; cursor: pointer;
+}
+
+/* Slideshow */
+.slideshow-section { padding: 20px 0; }
+.slideshow-container {
+    max-width: 600px; margin: auto; height: 380px;
+    position: relative; overflow: hidden; border-radius: 20px;
+    border: 1px solid #333;
+}
+.slide img { width: 100%; height: 380px; object-fit: cover; }
+
+/* Content */
+.content { padding: 20px; }
+#title { color: var(--brand-green); font-weight: 900; }
+
+.description {
+    background: var(--card-bg);
+    padding: 25px;
+    border-radius: 15px;
+    max-width: 480px;
+    margin: 0 auto 30px;
+    text-align: left;
+    border-left: 6px solid var(--brand-green);
+}
+
+.description p { color: var(--brand-green); font-weight: bold; }
+.description ul { padding-left: 20px; color: #ccc; }
+
+.phone-display { 
+    font-size: 2.2rem; font-weight: bold; color: white; 
+    margin-bottom: 30px; border: 2px dashed var(--brand-green);
+    display: inline-block; padding: 10px 20px; border-radius: 10px;
+}
+
+/* Buttons */
+.button-group { display: flex; flex-direction: column; gap: 15px; max-width: 320px; margin: auto; }
+.btn {
+    text-decoration: none; color: white; padding: 18px; border-radius: 12px;
+    font-weight: bold; font-size: 1.2rem; display: flex; align-items: center; justify-content: center; gap: 12px;
+    transition: 0.3s;
+}
+.call { background: var(--brand-green); color: black; }
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+
+.btn:hover { transform: scale(1.03); filter: brightness(1.1); }
+
+@media (max-width: 768px) {
+    .header-container { flex-direction: column; }
+    .name-area { width: 100%; margin: 10px 0; }
+}
+
+.fade { animation: fadeEffect 1s; }
+@keyframes fadeEffect { from {opacity: 0.4} to {opacity: 1} }
